@@ -1,0 +1,458 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 15px;
+  font-size: 16px; /* Added font size */
+  text-align: center;
+}
+
+.btn-primary {
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.btn-secondary {
+  color: #fff;
+  background-color: #383848;
+  margin-top: 2rem;
+}
+
+.btn-primary:hover, 
+.btn-secondary:hover {
+  background: #e4b95b;
+}
+
+.primary-text {
+  color: #e4b95b;
+}
+
+/* Header Start */
+header {
+  height: 100vh;
+  background: url("./Food-Lover-main/img/home_bg.jpeg") center center/cover no-repeat;
+  position: relative;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+}
+
+.navbar img {
+  width: 80px;
+  margin-left: 100px;
+}
+
+nav ul {
+  display: flex;
+  margin-right: 100px;
+}
+
+nav ul li a {
+  padding: 15px 20px;
+  font-weight: 600;
+}
+
+nav ul li a:hover {
+  border-bottom: 2px solid #e4b95b;
+}
+
+header .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 75%;
+}
+
+header::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+header .content h1 {
+  font-size: 40px;
+  color: #fff;
+}
+
+header .content p {
+  color: #fff;
+  margin: 20px 0 40px;
+}
+
+header * {
+  z-index: 10;
+}
+/* Header End */
+
+/* About Start */
+#about {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f4f4f4;
+}
+
+#about .title, 
+#offers .title,
+#Menu .title
+ {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+#about h2,
+#offers h2 ,
+#Menu h2,
+#gallery h2
+{
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+#about h2 ,
+#Menu  h2
+{
+  color: #383848;
+}
+
+#about .title p,
+#Menu  .title p
+{
+  font-size: 14px;
+  color: #9a9a9a;
+  font-weight: 600;
+}
+
+#about .about-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+#about .about-content img {
+  width: 450px;
+}
+
+#about .about-content p {
+  color: #9a9a9a;
+  margin-right: 7rem;
+  font-weight: 500;
+  line-height: 1.6; /* Changed comma to period */
+}
+
+/* About End */
+
+/* Offers Start */
+
+
+/* Offers End */
+
+#offers {
+  height: 80vh;
+  background: url("./Food-Lover-main/img/offer-background.jpg") center center/cover fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#offers h2 {
+  color: #e4b95b;
+}
+
+#offers .title p {
+  color: #fff;
+  font-weight: 500;
+}
+
+#offers .offers-items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+#offers .offers-items img {
+  width: 200px;
+}
+
+#offers .offers-items h3 {
+  font-size: 25px;
+  color: #fff;
+  margin: 15px 0;
+}
+
+#offers .offers-items p {
+  color: #fff;
+  font-size: 14px;
+  padding: 0 20px;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+#offers .offers-items span {
+  font-weight: 600;
+  font-size: 18px;
+  margin-left: 5px;
+}
+
+/* Menu Section Start */
+#Menu {
+  background: #f4f2ed;
+  padding: 5rem 0;
+}
+
+#menu .title h2 {
+  color: #383848;
+}
+#Menu .title p {
+  color: #9a9a9a;
+  font-weight: 500;
+}
+
+#Menu .menu-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#Menu .menu-items .menu-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+}
+
+#Menu .menu-items .menu-item img {
+  width: 80px;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+#Menu .menu-items .menu-item h3 {
+  color: #383848;
+  border-bottom: 1px dashed #c2bdbd;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+#Menu .menu-items .menu-item span {
+  position: absolute;
+  right: 0px;
+  top: 0;
+}
+
+#Menu .menu-items .menu-item p {
+  margin-top: 10px;
+}
+
+#Menu .btn {
+  display: block;
+  margin: auto;
+  border: none;
+  margin-top: 30px;
+  background: #e4b95b;
+}
+#Menu .btn:hover{
+  background: #383848;
+}
+
+/*  dat time star */
+
+#daytime{
+background: url(./Food-Lover-main/img/daytime_bg.jpeg) center center/cover fixed no-repeat;
+color: #9a9a9a;
+text-align: center;
+}
+#daytime .daytime-items{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 40vh;
+  justify-content: space-evenly;
+}
+#daytime .daytime-items h3{
+  font-size: 32px;
+  margin:20px 0 10px;
+  color: #fff;
+}
+#daytime .daytime-items p{
+  font-weight: 500;
+}
+#daytime .daytime-items:hover{
+  opacity: 1;
+}
+/*  dat time end  */
+
+#gallery{
+  background: url(./Food-Lover-main/img/offer-background.jpg)center center/cover no-repeat ;
+padding: 8rem 0 6rem;
+}
+#gallery  h2{
+  color:#fff ;
+  text-align: center;
+}
+#gallery .img-gallery img{
+  width: 280px;
+  height: 200px;
+  border-radius: 15px;
+  margin: 20px;
+  opacity: 0.8;
+}
+#gallery .img-gallery{
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+#gallery .img-gallery img:hover{
+  opacity: 1;
+}
+
+/* gallert start */
+
+/* Contact Section */
+#contact {
+  background: #f4f2ed;
+  padding: 5rem 0;
+}
+
+#contact .container {
+  max-width: 900px;
+  margin: auto;
+}
+
+#contact .contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+#contact .contact-info {
+  flex: 1;
+}
+
+#contact .contact-info div {
+  margin-bottom: 1.5rem;
+}
+
+#contact .contact-info h3 {
+  font-size: 28px;
+  color: #383848;
+  margin-bottom: 10px;
+}
+
+#contact .contact-info p {
+  color: #9a9a9a;
+}
+
+#contact .contact-info p i {
+  color: #e4b95b;
+  margin-right: 5px;
+}
+
+#contact .contact-info a {
+  color: #fff;
+  background: #383848;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 50%;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+#contact .contact-info a i {
+  margin: 0px;
+}
+
+#contact .contact-info a:hover {
+  background-color: #e4b95b;
+  color: #383848;
+}
+
+form {
+  flex: 1;
+}
+
+form input,
+form textarea {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  border: none;
+  background-color: #e3e2dd;
+  border-radius: 5px;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: none;
+  background-color: #fff;
+}
+
+form button {
+  display: inline-block;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  background: #e4b95b;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #383848;
+}
+
+/* gallert end */
+#footer{
+  background: #383848;
+  text-align: center;
+  color: #fff;
+  padding: 15px 0;
+  font-size: 14px;
+}
